@@ -1,0 +1,111 @@
+
+
+
+  <div id="maincontent">
+    
+            <button class="callthepopupbtn"id="button">Show Popup</button>
+</div>
+<div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+        <p>ddfdddfdddfdddfdddfdddfdddfdddfdddfdddfdddfdddfdddfdddfdddfdddfd</p>
+    </div>
+</div>
+
+<style>
+
+  .popupcontent {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    text-anchor: middle;
+    margin-right: 10px;
+    align-self: center;
+
+  }
+    #overlay {
+        display: none;
+        position: absolute;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        background: #999;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        z-index: 100;
+    }
+    .callthepopupbtn{
+        background-color: rgb(2, 117, 17);
+        border: none;
+        color: #ffffff;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    #popup {
+        display: none;
+        align-tracks: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: rgb(104, 103, 103);
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        text-align: center;
+        margin-left: -100px;
+        /*Half the value of width to center div*/
+        margin-top: -100px;
+        /*Half the value of height to center div*/
+        z-index: 200; 
+    }
+
+    #popupclose {
+        float: right;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .popupcontent {
+        padding: 5px;
+    }
+
+    #button {
+        cursor: pointer;
+    }
+</style>
+
+
+<script>
+
+    // Initialize Variables
+    var closePopup = document.getElementById("popupclose");
+    var overlay = document.getElementById("overlay");
+    var popup = document.getElementById("popup");
+    var button = document.getElementById("button");
+    // Close Popup Event
+    closePopup.onclick = function () {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+    };
+    // Show Overlay and Popup
+    button.onclick = function () {
+        overlay.style.display = 'block';
+        popup.style.display = 'block';
+    }
+
+</script>
+
+
+
