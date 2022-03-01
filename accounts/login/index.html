@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Login - Maths Daily</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+	
+</head>
+
+
+<body>
+
+	
+	<div class="login">
+		<h1>Login</h1>
+		<form action="authenticate.php" method="post">
+			<label for="username">
+				<i class="fas fa-user"></i>
+			</label>
+			<input type="text" name="username" placeholder="Username" id="username" required>
+			<label for="password">
+				<i class="fas fa-lock"></i>
+			</label>
+			<input type="password" name="password" placeholder="Password" id="password" required>
+			<input type="submit" value="Login">
+			<br>
+		</form>
+		
+
+		<div class="center">
+			<button class="backButton" onclick="homeFunc()">&#x2190; Go Back &#x2190;</button>
+			<script>
+
+			function homeFunc() {
+					window.location.href="/accounts/";
+				}
+			</script>
+		</div>
+		<p class="accountissues">put something here maybe i dont know <a
+			href="mailto:email">email</p>
+	</div>
+
+</body>
+
+</html>

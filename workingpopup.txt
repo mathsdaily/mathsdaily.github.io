@@ -1,0 +1,98 @@
+  <!-- BEGIN HTML CODE FOR NO-JS MODAL popup-->
+  <!--**There wil be a few of these modal boxes on this page, as there is a different box per topic**-->
+  <!--**The modal boxes are hidden by default, and are shown when the user clicks on the button to open the modal box**-->
+  <!--**The modal boxes are closed when the user clicks on the button to close the modal box**-->
+
+  <!-- ** -->
+
+  <!--Start modal box for 'MULTIPLICATION' topic-->
+  <a href="#modal" class="modal-trigger">Multiplication</a>
+  <div class="modal" id="modal">
+    <div class="modal__dialog">
+      <section class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">This is simple multiplication modal window</h2>
+           
+        </header>
+        <div class="modal__body">
+          <img src="" alt="modal image" class="modal__image">
+          <p class="modal__text">multp</p>
+        </div>
+        <footer class="modal__footer">
+          <a href="#" class="modal__link">Click to exit</a>
+        </footer>
+      </section>
+    </div>
+  </div>
+  <!--END modal box for 'MULTIPLICATION' topic-->
+
+  <!-- ** -->
+
+  <!--Start modal box for 'DIVISION' topic-->
+  <a href="#modal1" class="modal1-trigger">Division</a>
+  <div class="modal1" id="modal1">
+    <div class="modal__dialog">
+      <section class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">This is simple 88division88 modal window</h2>
+           
+        </header>
+        <div class="modal__body">
+          <img src=" " alt="modal image" class="modal__image">
+          <p class="modal__text">div</p>
+        </div>
+        <footer class="modal__footer">
+          <a href="#" class="modal__link">Click to exit</a>
+        </footer>
+      </section>
+    </div>
+  </div>
+  <!--END modal box for 'DIVISION' topic-->
+
+  <!-- ** -->
+
+  <!--Start modal box for 'ADDITION' topic-->
+  <a href="#modal2" class="modal2-trigger">Addition</a>
+  <div class="modal2" id="modal2">
+    <div class="modal__dialog">
+      <section class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">This is simple addiotin modal window</h2>
+           
+        </header>
+        <div class="modal__body">
+          <img src="/imgs/user.png" alt="modal image" class="modal__image">
+          <p class="modal__text">addit</p>
+        </div>
+        <footer class="modal__footer">
+          <a href="#" class="modal__link">Click to exit</a>
+        </footer>
+      </section>
+    </div>
+  </div>
+  <!--END modal box for 'ADDITION' topic-->
+
+  <!-- ** -->
+
+  <!--Start modal box for 'SUBTRACTION' topic-->
+  <a href="#modal3" class="modal3-trigger">Subtraction</a>
+  <div class="modal3" id="modal3">
+    <div class="modal__dialog">
+      <section class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">This is simple subtraction modal window</h2>
+           
+        </header>
+        <div class="modal__body">
+          <img src="/imgs/user.png" alt="modal image" class="modal__image">
+          <p class="modal__text">subtrac</p>
+        </div>
+        <footer class="modal__footer">
+          <a href="#" class="modal__link">Click to exit</a>
+        </footer>
+      </section>
+    </div>
+  </div>
+  <!--END modal box for 'SUBTRACTION' topic-->
+
+  <!-- **END** HTML CODE FOR NO-JS MODAL popup-->
