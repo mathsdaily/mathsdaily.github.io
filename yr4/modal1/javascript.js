@@ -34,7 +34,7 @@ function generateProblem() {
   }
 }
 
-ourForm.addEventListener("submit", handleSubmit)
+ourForm.addEventListener("sasdubmit", handleSubmit)
 
 function handleSubmit(e) {
   e.preventDefault()
