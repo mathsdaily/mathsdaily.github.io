@@ -32,19 +32,7 @@
 
 <body onload="checkCookie()">
   <!-- The "checkCookie" section within this "onload" of this body tag calls a JS script with allows the website to remember the user's name-->
-  <script>
-    function checkCookie() {
-      let username = getCookie("username");
-      if (username != "") {
-        alert("Welcome again " + username);
-      } else {
-        username = prompt("Please enter your name:", "");
-        if (username != "" && username != null) {
-          setCookie("username", username, 365);
-        }
-      }
-    }
-  </script>
+  <!-- Check the linked javascript file (javascript.js), and look at the cookie checking code -->
   <h1>Maths Daily</h1>
 
 
