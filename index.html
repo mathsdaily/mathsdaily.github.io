@@ -5,6 +5,7 @@
   * The head section sets the title for the page, and connects to the Google Fonts API for the custom font
   * It also connects this document to other documents, such as CSS, and JS 
 -->
+
 <head>
   <title>Maths Daily | Home</title>
   <meta charset="utf-8" />
@@ -29,10 +30,24 @@
 <!-- END: Banner-->
 
 
-<body onload="checkCookie()"> <!-- The "checkCookie" section within this "onload" of this body tag calls a JS script with allows the website to remember the user's name-->
+<body onload="checkCookie()">
+  <!-- The "checkCookie" section within this "onload" of this body tag calls a JS script with allows the website to remember the user's name-->
+  <script>
+    function checkCookie() {
+      let username = getCookie("username");
+      if (username != "") {
+        alert("Welcome again " + username);
+      } else {
+        username = prompt("Please enter your name:", "");
+        if (username != "" && username != null) {
+          setCookie("username", username, 365);
+        }
+      }
+    }
+  </script>
   <h1>Maths Daily</h1>
 
-  
+
   <!--START: Code for the navbar and the drop down in the navbar-->
   <div class="navbar">
     <a class="active" href="/">Home</a>
@@ -62,7 +77,7 @@
     <div class="parallax">
       <br><br><br><br><br><br><br><br><br><br>
       <h1>Maths Daily<br>
-      <a class="hoverGradient" href="/accounts/">LOGIN</a>
+        <a class="hoverGradient" href="/accounts/">LOGIN</a>
     </div>
   </div>
 
@@ -73,4 +88,5 @@
 
 
 </body>
+
 </html>
