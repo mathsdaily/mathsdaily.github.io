@@ -33,4 +33,5 @@ function checkCookie() { // This function simple gets the value, from the decode
      }
   }
 }
+ 
 // END: Javascript code for sourcing, and storing the name of the user who enters the site. 
