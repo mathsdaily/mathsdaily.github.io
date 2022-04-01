@@ -4,9 +4,9 @@
 <head>
   <title>Maths Daily | YR1</title>
   <meta charset="utf-8" />
+  <script type="text/javascript" defer src="javascript.js"></script>
    
-   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
@@ -56,19 +56,69 @@
 
   <!-- ** -->
   
-  <!-- ** -->
+  <!--Start modal box for 'MULTIPLICATION' topic-->
+   
 
   <!--Start modal box for 'ADDITION' topic-->
-  <a href="modal2/index.html#modal2" class="modal2-trigger">Addition</a>
-   
+  
+  <div class="modal2" id="modal2">
+    
+    <link rel="stylesheet" href="modal1/modal.css">
+    <div class="modal__dialog">
+      <section class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">Addition</h2>
+        </header>
+        <div class="modal__body">
+          <img src="" alt="modal image" class="modal__image">
+          <p class="modal__text">
+            <div class="main-ui">
+              <p class="problem"></p>
+          
+              <form action="" class="our-form">
+                <input class="our-field" autocomplete="off">
+                <button>Submit</button>
+              </form>
+          
+              <p class="status">You need <span class="points-needed">10</span> more points, and are allowed to make <span
+                  class="mistakes-allowed">2</span> more mistakes.</p>
+          
+              <div class="progress">
+                <div class="boxes">
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                  <div class="box"></div>
+                </div>
+                <div class="progress-inner"></div>
+              </div>
+          
+            </div>
+          
+            <div class="overlay">
+              <div class="overlay-inner">
+                <p class="end-message"></p>
+                <button class="reset-button">Try again</button>
+              </div>
+            </div>
+           
+           
+          </p>
+        </div>
+        <footer class="modal__footer">
+          <a href="/yr1/" class="modal__link">Click to exit</a>
+        </footer>
+      </section>
+    </div>
+  </div>
   <!--END modal box for 'ADDITION' topic-->
-
-  <!-- ** -->
-
-  <!--Start modal box for 'SUBTRACTION' topic-->
-  <a href="modal3/index.html#modal3" class="modal3-trigger">Subtraction</a>
-   
-  <!--END modal box for 'SUBTRACTION' topic-->
+ 
 
   <!-- **END** HTML CODE FOR NO-JS MODAL popup-->
 
