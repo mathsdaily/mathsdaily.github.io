@@ -7,9 +7,9 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 $DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'u210039736_root';
-$DATABASE_PASS = 'WindAus21!';
-$DATABASE_NAME = 'u210039736_phplogin';
+$DATABASE_USER = 'to be added';
+$DATABASE_PASS = 'nothing yet';
+$DATABASE_NAME = 'nothing yet ';
 
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
