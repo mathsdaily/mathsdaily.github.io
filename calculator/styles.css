@@ -7,8 +7,11 @@
   text-align-last: center;
   scroll-snap-align: center;
 }
-
-
+*, *::before, *::after {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Dosis', sans-serif;
+   
+}
 
 .hoverGradient {
 font-size: 40px;
@@ -41,47 +44,6 @@ animation: GradientAnimation 2s ease infinite;
   background-position: 0% 50%
 }
 }
-
-
-
-
-.parallax {
-  background: url("/imgs/parra1-5.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 450px;
-
-  animation: fadeIn 2.5s;
-  -webkit-animation: fadeIn 2.5s;
-  -moz-animation: fadeIn 2.5s;
-  -o-animation: fadeIn 2.5s;
-  -ms-animation: fadeIn 2.5s;
-}
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
 
 
 
@@ -124,8 +86,6 @@ body {
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(2, 117, 17);
 }
-
-
 
 .dropdown-content {
   display: none;
@@ -262,38 +222,16 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*, *::before, *::after {
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: 'Dosis', sans-serif;
-   
-}
-
- 
-
+/* The CSS for the Calculator */
 .calculator-grid {
   display: grid;
   margin-left: 20%;
-  position: absolute;
+  padding: 0px;
+  
   float: center;
+  margin: 0 auto; 
   justify-content: center;
+  width: 100%;
   align-content: center;
    
   min-height: 100vh;
@@ -338,5 +276,3 @@ a {
   color: white;
   font-size: 2.5rem;
 }
-
- 
