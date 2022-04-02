@@ -29,17 +29,17 @@
 </div>
 <!-- END: Banner-->
 
-<script>
-
+  <script>
   var username = localStorage.getItem("username");
         if(!username){
-          username = prompt("Please enter your HOME Page name!");
+          username = prompt("Please enter your name. It is important you do so now, so you can be identified");
           location.reload();
           localStorage.setItem("username", username);
           
         }
-  
   </script>
+
+   
 <body>
  
   <!-- The "checkCookie" section within this "onload" of this body tag calls a JS script with allows the website to remember the user's name-->
