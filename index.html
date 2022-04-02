@@ -29,19 +29,28 @@
 </div>
 <!-- END: Banner-->
 
-  <script>
+<script>
   var username = localStorage.getItem("username");
-        if(!username){
-          username = prompt("Please enter your name. It is important you do so now, so you can be identified");
-          location.reload();
-          localStorage.setItem("username", username);
-          
-        }
-  </script>
+  if (!username) {
+    username = prompt("Please enter your name. It is important you do so now, so you can be identified");
+    location.reload();
+    localStorage.setItem("username", username);
+  }
 
-   
+  // this is a cool little "easter egg" which shows some games when the user presses the "F" key
+  // followed this tutorial for keyboard shortcuts: https://youtu.be/lNJMDTSkNXo
+  document.addEventListener("keydown", e => {
+    if (e.key.toLowerCase() === "f" ) {
+      window.location.href = "/fun";
+    }
+  });
+
+
+</script>
+
+
 <body>
- 
+
   <!-- The "checkCookie" section within this "onload" of this body tag calls a JS script with allows the website to remember the user's name-->
   <!-- Check the linked javascript file (javascript.js), and look at the cookie checking code -->
   <h1>Maths Daily</h1>
