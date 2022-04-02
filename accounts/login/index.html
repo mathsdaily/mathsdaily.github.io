@@ -6,6 +6,9 @@
 	<title>Login - Maths Daily</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+
+	<!--I am using an external style sheet for the user icons, to make it look more uniform-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 
 
@@ -14,18 +17,19 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 
-	
+
 </head>
 
 
 <body>
 
-	
+
 	<div class="login">
 		<h1>Login</h1>
 		<form action="authenticate.php" method="post">
 			<label for="username">
 				<i class="fas fa-user"></i>
+				<!-- This is an example of the class needed to call to use the external icons. One in the HTML code, simply style them in CSS as if they were a div-->
 			</label>
 			<input type="text" name="username" placeholder="Username" id="username" required>
 			<label for="password">
@@ -35,19 +39,19 @@
 			<input type="submit" value="Login">
 			<br>
 		</form>
-		
+
 
 		<div class="center">
 			<button class="backButton" onclick="homeFunc()">&#x2190; Go Back &#x2190;</button>
 			<script>
 
-			function homeFunc() {
-					window.location.href="/accounts/";
+				function homeFunc() {
+					window.location.href = "/accounts/";
 				}
 			</script>
 		</div>
-		<p class="accountissues">Click to<a
-			href="mailto:jamesac2024@student.stlukes.nsw.edu.au"> email</p>
+		<p class="accountissues">Click to <a
+				href="mailto:jamesac2024@student.stlukes.nsw.edu.au"><strong><em>email</em></strong></p>
 	</div>
 
 </body>
