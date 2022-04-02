@@ -2,18 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maths Daily | Accounts</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-  <title>Maths Daily | Calculator</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="script.js" defer></script>
 </head>
+<div style="background-color: #000000; height:50px; border:thin solid #ffffff">
+  </ul>
+  <li style='padding:10px;text-align:center;font-size:20px;'>We are currently still in a Beta phase</li>
+  </ul>
+</div>
 
 <body>
+  <h1>Maths Daily</h1>
+
+  <!--START: Code for the navbar and the drop down in the navbar-->
   <div class="navbar">
     <a href="/">Home</a>
     <a href="/accounts/">Login/Create account</a>
@@ -29,35 +34,41 @@
         <a href="/yr4/">Year 4</a>
         <a href="/yr5/">Year 5</a>
         <a href="/yr6/">Year 6</a>
-</div>
       </div>
-      
-      <center>
-  <div class="calculator-grid">
-    <div class="output">
-      <div data-previous-operand class="previous-operand"></div>
-      <div data-current-operand class="current-operand"></div>
     </div>
-    <button data-all-clear class="span-two">AC</button>
-    <button data-delete>DEL</button>
-    <button data-operation>÷</button>
-    <button data-number>1</button>
-    <button data-number>2</button>
-    <button data-number>3</button>
-    <button data-operation>x</button>
-    <button data-number>4</button>
-    <button data-number>5</button>
-    <button data-number>6</button>
-    <button data-operation>+</button>
-    <button data-number>7</button>
-    <button data-number>8</button>
-    <button data-number>9</button>
-    <button data-operation>-</button>
-    <button data-number>.</button>
-    <button data-number>0</button>
-    <button data-equals class="span-two">=</button>
-  </center>
   </div>
+  <!--END: Code for the navbar and the drop down in the navbar-->
+
+  <div class="container">
+    <br>
+    <p class="welcometitle">Hello <em><strong><span id="username"></span></strong></em><br>Welcome to the accounts page
+    </p>
+    <br>
+    <p class="accountPGlinks">Click below to manage your account settings</p> <a href="/accounts/login/">
+      <p class="linkacc">Login</p>
+    </a>
+  </div>
+
+  <script>
+    var username = localStorage.getItem("username");
+    document.getElementById("username").innerHTML = username;
+    if (!username) {
+      username = prompt("It looks like we can't find your name. Please enter your name");
+      location.reload();
+      localStorage.setItem("username", username);
+    }
+    if (username == null) {
+      username = prompt("It looks like we can't find your name. Please enter your name");
+      location.reload();
+      localStorage.setItem("username", username);
+    }
+  </script>
+
+  <footer>
+    <span>&#169;</span> Maths Daily Australia<br>
+    <br><br>
+  </footer>
+
 </body>
 
 </html>
