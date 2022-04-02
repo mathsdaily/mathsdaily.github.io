@@ -29,8 +29,19 @@
 </div>
 <!-- END: Banner-->
 
+<script>
 
-<body onload="checkCookie()">
+  var username = localStorage.getItem("username");
+        if(!username){
+          username = prompt("Please enter your HOME Page name!");
+          location.reload();
+          localStorage.setItem("username", username);
+          
+        }
+  
+  </script>
+<body>
+ 
   <!-- The "checkCookie" section within this "onload" of this body tag calls a JS script with allows the website to remember the user's name-->
   <!-- Check the linked javascript file (javascript.js), and look at the cookie checking code -->
   <h1>Maths Daily</h1>
