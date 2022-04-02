@@ -40,7 +40,9 @@
   // this is a cool little "easter egg" which shows some games when the user presses the "F" key
   // followed this tutorial for keyboard shortcuts: https://youtu.be/lNJMDTSkNXo
   document.addEventListener("keydown", e => {
+    console.log(e);
     if (e.key.toLowerCase() === "f") {
+      alert("You found the hidden key to access games!");
       window.location.href = "/fun";
     }
   });
