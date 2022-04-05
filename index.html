@@ -5,7 +5,6 @@
   * The head section sets the title for the page, and connects to the Google Fonts API for the custom font
   * It also connects this document to other documents, such as CSS, and JS 
 -->
-
 <head>
   <title>Maths Daily | Home</title>
   <meta charset="utf-8" />
@@ -16,7 +15,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
   <!-- END: The Google Fonts API-->
-
 </head>
 
 
@@ -29,36 +27,38 @@
 </div>
 <!-- END: Banner-->
 
+<!-- START: In-line for storage and for keydown shortcuts-->
 <script>
+  // START: Js script to fetch local storage, and to set local storage if needed-->
   var username = localStorage.getItem("username");
   if (!username) {
     username = prompt("Please enter your name. It is important you do so now, so you can be identified");
-    location.reload();
-    localStorage.setItem("username", username);
+    location.reload(); // refreshes the page
+    localStorage.setItem("username", username); // sets the username to local storage
   }
+  // END: Js script to fetch local storage, and to set local storage if needed-->
+
 
   // this is a cool little "easter egg" which shows some games when the user presses the "F" key
   // followed this tutorial for keyboard shortcuts: https://youtu.be/lNJMDTSkNXo
   document.addEventListener("keydown", e => {
-    console.log(e);
+    console.log(e); // shows the keys pressed within the console
     if (e.key.toLowerCase() === "f") {
-      alert("You found the hidden key to access games!");
-      window.location.href = "/fun";
+      alert("You found the hidden key to access games!"); // popup alert box 
+      window.location.href = "/fun"; // redirect to "hidden" page
     }
   });
-  
-  
 </script>
+<!-- END: In-line for storage and for keydown shortcuts-->
 
 
 <body>
 
-  <!-- The "checkCookie" section within this "onload" of this body tag calls a JS script with allows the website to remember the user's name-->
-  <!-- Check the linked javascript file (javascript.js), and look at the cookie checking code -->
+ 
   <h1>Maths Daily</h1>
 
 
-  <!--START: Code for the navbar and the drop down in the navbar-->
+  <!--START: Code for the navbar and the drop down within the navbar-->
   <div class="navbar">
     <a class="active" href="/">Home</a>
     <a href="/accounts/">Login/Create account</a>
@@ -77,22 +77,22 @@
       </div>
     </div>
   </div>
-  <!--END: Code for the navbar and the drop down in the navbar-->
+  <!--END: Code for the navbar and the drop down within the navbar-->
 
 
   <div class="container">
     <br>
-    <p class="welcometitle">Welcome to Maths Daily</p>
+    <p class="welcometitle">Welcome to Maths Daily</p> <!-- The welcome title, on the center of the parralax image-->
     <br>
     <div class="parallax">
       <br><br><br><br><br><br><br><br><br><br>
-      <h1>Maths Daily<br>
-        <a class="hoverGradient" href="/accounts/">LOGIN</a>
+      <h1>Maths Daily</h1><br>
+        <a class="hoverGradient" href="/accounts/">LOGIN</a> <!-- The nice looking hover gradient login button on the parralax image-->
     </div>
   </div>
 
-  <footer>
-    <span>&#169;</span> Maths Daily Australia<br>
+  <footer> <!-- The simple footer with the maths daily copy right-->
+    <span>&#169;</span> Maths Daily Australia<br> <!-- The &#169 is used for the copyright symbol-->
     <br><br>
   </footer>
 
