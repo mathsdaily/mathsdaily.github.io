@@ -64,7 +64,16 @@ a {
 }
 /* END of the core CSS for the basic styling of site */
 
+/* START - the css code to make the Maths Daily title on the parralax image scale on hover */
+.scaleLargeTitle {
+  transition: all .4s ease-in-out;
+}
 
+.scaleLargeTitle:hover {
+  transform: scale(1.5); /* (150% zoom */
+  font-weight: bolder; /* make it bolder than the original */
+}
+/* END - the css code to make the Maths Daily title on the parralax image scale on hover */
 
 
 /* the css code for the hover effect when hovering over the login link */
@@ -87,6 +96,9 @@ a {
   animation: GradientAnimation 2s ease infinite;
 }
 
+
+
+ 
 /* START: the animation for the hover gradient login link */
 @keyframes GradientAnimation {
   0% {
@@ -171,9 +183,6 @@ a {
 }
 /* the different declarations for different browsers is needed to avoid issues */ 
 /* END: the code to fade in the maths banner img */
-
-
-
 
 
 /* START NavBar CSS */
