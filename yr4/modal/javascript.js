@@ -4,7 +4,7 @@ const ourField = document.querySelector(".our-field")
 const pointsNeeded = document.querySelector(".points-needed")
 const mistakesAllowed = document.querySelector(".mistakes-allowed")
 const progressBar = document.querySelector(".progress-inner")
-const endMessage = document.querySelector(".end-message")
+const endMessage = document.querySelector(".end-message")s
 const resetButton = document.querySelector(".reset-button")
 
 let state = {
