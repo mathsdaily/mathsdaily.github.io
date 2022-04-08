@@ -1,4 +1,3 @@
-
 const problemElement = document.querySelector(".problem")
 const ourForm = document.querySelector(".our-form")
 const ourField = document.querySelector(".our-field")
