@@ -21,15 +21,20 @@ function updateProblem() {
 
 updateProblem()
 
-function generateNumber(max) {
+function generateNumber1st(max) {
+  return Math.floor(Math.random() * 10) + 1;
+}
+function generateNumber2nd(max) {
+  return Math.floor(Math.random() * 3) + 0;
+}
+function generateOperator(max) {
   return Math.floor(Math.random() * (max + 1))
 }
-
 function generateProblem() {
   return {
-    numberOne: generateNumber(10),
-    numberTwo: generateNumber(10),
-    operator: ['x', '-', '+', '÷'][generateNumber(3)]
+    numberOne: generateNumber1st(10),
+    numberTwo: generateNumber2nd(1000),
+    operator: ['-', 'x', '+', '÷'][generateOperator(3)]
   }
 }
 
