@@ -28,9 +28,9 @@ function generateNumber(max) {
 
 function generateProblem() {
   return {
-    numberOne: generateNumber(10),
-    numberTwo: generateNumber(3),
-    operator: ['÷'][generateNumber(0)]
+    numberOne: generateNumber(15),
+    numberTwo: generateNumber(8),
+    operator: ['+', '-', 'x', '÷'][generateNumber(3)]
   }
 }
 ourForm.addEventListener("submit", handleSubmit)
@@ -40,6 +40,9 @@ function handleSubmit(e) {
 
   let correctAnswer
   const p = state.currentProblem
+  if (p.operator == "+") correctAnswer = p.numberOne + p.numberTwo
+  if (p.operator == "-") correctAnswer = p.numberOne - p.numberTwo
+  if (p.operator == "x") correctAnswer = p.numberOne * p.numberTwo
   if (p.operator == "÷") correctAnswer = Math.round (p.numberOne / p.numberTwo)
   if (correctAnswer === Infinity) correctAnswer = 0
 

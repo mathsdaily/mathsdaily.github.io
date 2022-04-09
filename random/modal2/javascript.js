@@ -28,9 +28,9 @@ function generateNumber(max) {
 
 function generateProblem() {
   return {
-    numberOne: generateNumber(10),
-    numberTwo: generateNumber(10),
-    operator: ['+', '-', 'x'][generateNumber(0)]
+    numberOne: generateNumber(29),
+    numberTwo: generateNumber(19),
+    operator: ['+', '-', 'x', '÷'][generateNumber(3)]
   }
 }
 
@@ -44,7 +44,9 @@ function handleSubmit(e) {
   if (p.operator == "+") correctAnswer = p.numberOne + p.numberTwo
   if (p.operator == "-") correctAnswer = p.numberOne - p.numberTwo
   if (p.operator == "x") correctAnswer = p.numberOne * p.numberTwo
-
+  if (p.operator == "÷") correctAnswer = Math.round (p.numberOne / p.numberTwo)
+  if (correctAnswer === Infinity) correctAnswer = 0
+  
   if (parseInt(ourField.value, 10) === correctAnswer) {
     state.score++
     pointsNeeded.textContent = 10 - state.score
