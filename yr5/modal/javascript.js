@@ -27,8 +27,8 @@ function generateNumber(max) {
 
 function generateProblem() {
   return {
-    numberOne: generateNumber(10),
-    numberTwo: generateNumber(10),
+    numberOne: generateNumber(11),
+    numberTwo: generateNumber(11),
     operator: ['x', '-', '+'][generateNumber(0)]
   }
 }

@@ -28,8 +28,8 @@ function generateNumber(max) {
 
 function generateProblem() {
   return {
-    numberOne: generateNumber(10),
-    numberTwo: generateNumber(10),
+    numberOne: generateNumber(86),
+    numberTwo: generateNumber(70),
     operator: ['-', 'x', '+'][generateNumber(0)]
   }
 }
