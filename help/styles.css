@@ -735,6 +735,79 @@ a {
 }
 /* END CSS for the core text alignment and styling for the rest of the site*/
 
+
+/* START CSS for the faq*/
+
+.accordion-content {
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgb(45, 45, 45);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+  border-radius: 8px;
+}
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.348);
+  margin-bottom: 0.5em;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.2em;
+  background-color: #00000000;
+}
+
+.item-icon {
+  margin-left: 1rem;
+  flex: 0 0 25px;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  background: rgb(38, 102, 32);
+  cursor: pointer;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+}
+.item-icon i {
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.item-question {
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.active .item-icon i {
+  transform: rotate(540deg);
+}
+
+.active .item-question {
+  font-weight: 500;
+}
+
+.item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.item-answer {
+  line-height: 150%;
+  opacity: 0.8;
+}
+/* END CSS for the faq*/
+
+
+
 /* END CSS */
 /* ** */
 /* END CSS */
