@@ -160,18 +160,45 @@ a.modal2-trigger {
     margin: 10px;
 }
 
-a.modal3-trigger {
+a.modal4-trigger {
     margin: 10px;
 }
 
 /* END Aligning buttons*/
 
-/* START Multiplication Topic */
-*, *::after, *::before {
-    box-sizing: border-box;
-}
 
-.modal-trigger {
+/*  BEGIN CODE FOR MODAL */
+/* START Aligning buttons*/
+a.modal-trigger {
+    margin: 10px;
+  }
+  
+  a.modal1-trigger {
+    margin: 10px;
+  }
+  
+  a.modal2-trigger {
+    margin: 10px;
+  }
+  
+  a.modal3-trigger {
+    margin: 10px;
+  }
+  
+  a.modal4-trigger {
+    margin: 10px;
+  }
+  
+  a.modal5-trigger {
+    margin: 10px;
+  }
+  /* END Aligning buttons*/
+  
+  /* START Multiplication Topic */
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+  .modal-trigger {
     text-decoration: none;
     padding: 1rem;
     background: rgb(2, 117, 17);
@@ -179,9 +206,8 @@ a.modal3-trigger {
     border-radius: 3px;
     margin-top: 50px;
     color: #fff;
-}
-
-.modal {
+  }
+  .modal {
     display: none;
     background: rgba(0, 0, 0, .8);
     position: fixed;
@@ -189,91 +215,78 @@ a.modal3-trigger {
     top: 0;
     height: 100%;
     width: 100%;
-}
-
-.modal:target {
+  }
+  .modal:target {
     display: table;
-}
-
-.modal__dialog {
+  }
+  .modal__dialog {
     display: table-cell;
     vertical-align: middle;
-}
-
-.modal__content {
+  }
+  .modal__content {
     background: rgb(255, 255, 255);
     width: 60%;
     min-width: 300px;
     margin: auto;
     position: relative;
     animation: slideUp 0.3s ease-in-out;
-}
-
-.modal__header {
+  }
+  .modal__header {
     background: #2980b9;
     color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     position: relative;
-}
-
-.modal__title {
+  }
+  .modal__title {
     margin: 0;
-
-}
-
-.modal__close {
+    
+  }
+  .modal__close {
     color: #fff;
     text-decoration: none;
     font-size: 30px;
     position: absolute;
     top: 1rem;
     right: 1rem;
-}
-
-.modal__image {
+  }
+  .modal__image {
     display: block;
     margin: 1rem auto;
-}
-
-.modal__text {
+  }
+  .modal__text {
     padding: 0 1rem;
     color: rgb(0, 0, 0);
     line-height: 1.5;
-}
-
-.modal__footer {
+  }
+  .modal__footer {
     padding: 1rem;
     border-top: 1px solid #ccc;
     color: rgb(0, 0, 0);
-}
-
-.modal__link {
+  }
+  .modal__link {
     color: rgb(0, 0, 0);
     text-decoration: underline;
     font-weight: bolder;
-}
-
-@keyframes slideUp {
+  }
+  @keyframes slideUp {
     from {
-        opacity: 0;
-        bottom: -200px;
+      opacity: 0;
+      bottom: -200px;
     }
-
+  
     to {
-        opacity: 1;
-        bottom: 0;
+      opacity: 1;
+      bottom: 0;
     }
-}
-
-/* END Multiplication Topic */
-
-
-/* START Division Topic */
-*, *::after, *::before {
+  }
+  /* END Multiplication Topic */
+  
+  
+  /* START Division Topic */
+  *, *::after, *::before {
     box-sizing: border-box;
-}
-
-.modal1-trigger {
+  }
+  .modal1-trigger {
     text-decoration: none;
     padding: 1rem;
     background: rgb(2, 117, 17);
@@ -281,10 +294,9 @@ a.modal3-trigger {
     border-radius: 3px;
     margin-top: 50px;
     color: #fff;
-}
-
-.modal1 {
-
+  }
+  .modal1 {
+     
     display: none;
     background: rgba(0, 0, 0, .8);
     position: fixed;
@@ -292,89 +304,76 @@ a.modal3-trigger {
     top: 0;
     height: 100%;
     width: 100%;
-}
-
-.modal1:target {
+  }
+  .modal1:target {
     display: table;
-}
-
-.modal__dialog {
+  }
+  .modal__dialog {
     display: table-cell;
     vertical-align: middle;
-}
-
-.modal__content {
+  }
+  .modal__content {
     background: rgb(255, 255, 255);
     width: 60%;
     min-width: 300px;
     margin: auto;
     position: relative;
     animation: slideUp 0.3s ease-in-out;
-}
-
-.modal__header {
+  }
+  .modal__header {
     background: #2980b9;
     color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     position: relative;
-}
-
-.modal__title {
+  }
+  .modal__title {
     margin: 0;
-}
-
-.modal__close {
+  }
+  .modal__close {
     color: #fff;
     text-decoration: none;
     font-size: 30px;
     position: absolute;
     top: 1rem;
     right: 1rem;
-}
-
-.modal__image {
+  }
+  .modal__image {
     display: block;
     margin: 1rem auto;
-}
-
-.modal__text {
+  }
+  .modal__text {
     padding: 0 1rem;
     color: rgb(0, 0, 0);
     line-height: 1.5;
-}
-
-.modal__footer {
+  }
+  .modal__footer {
     padding: 1rem;
     border-top: 1px solid #ccc;
     color: rgb(0, 0, 0);
-}
-
-.modal__link {
+  }
+  .modal__link {
     color: rgb(0, 0, 0);
     text-decoration: underline;
     font-weight: bolder;
-}
-
-@keyframes slideUp {
+  }
+  @keyframes slideUp {
     from {
-        opacity: 0;
-        bottom: -200px;
+      opacity: 0;
+      bottom: -200px;
     }
-
+  
     to {
-        opacity: 1;
-        bottom: 0;
+      opacity: 1;
+      bottom: 0;
     }
-}
-
-/* END Division Topic */
-
-/* START Addition Topic */
-*, *::after, *::before {
+  }
+  /* END Division Topic */
+  
+  /* START Addition Topic */
+  *, *::after, *::before {
     box-sizing: border-box;
-}
-
-.modal2-trigger {
+  }
+  .modal2-trigger {
     text-decoration: none;
     padding: 1rem;
     background: rgb(2, 117, 17);
@@ -382,9 +381,8 @@ a.modal3-trigger {
     border-radius: 3px;
     margin-top: 50px;
     color: #fff;
-}
-
-.modal2 {
+  }
+  .modal2 {
     display: none;
     background: rgba(0, 0, 0, .8);
     position: fixed;
@@ -392,90 +390,77 @@ a.modal3-trigger {
     top: 0;
     height: 100%;
     width: 100%;
-}
-
-.modal2:target {
+  }
+  .modal2:target {
     display: table;
-}
-
-.modal__dialog {
+  }
+  .modal__dialog {
     display: table-cell;
     vertical-align: middle;
-}
-
-.modal__content {
+  }
+  .modal__content {
     background: rgb(255, 255, 255);
     width: 60%;
     min-width: 300px;
     margin: auto;
     position: relative;
-
+  
     animation: slideUp 0.3s ease-in-out;
-}
-
-.modal__header {
+  }
+  .modal__header {
     background: #2980b9;
     color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     position: relative;
-}
-
-.modal__title {
+  }
+  .modal__title {
     margin: 0;
-}
-
-.modal__close {
+  }
+  .modal__close {
     color: #fff;
     text-decoration: none;
     font-size: 30px;
     position: absolute;
     top: 1rem;
     right: 1rem;
-}
-
-.modal__image {
+  }
+  .modal__image {
     display: block;
     margin: 1rem auto;
-}
-
-.modal__text {
+  }
+  .modal__text {
     padding: 0 1rem;
     color: rgb(0, 0, 0);
     line-height: 1.5;
-}
-
-.modal__footer {
+  }
+  .modal__footer {
     padding: 1rem;
     border-top: 1px solid #ccc;
     color: rgb(0, 0, 0);
-}
-
-.modal__link {
+  }
+  .modal__link {
     color: rgb(0, 0, 0);
     text-decoration: underline;
     font-weight: bolder;
-}
-
-@keyframes slideUp {
+  }
+  @keyframes slideUp {
     from {
-        opacity: 0;
-        bottom: -200px;
+      opacity: 0;
+      bottom: -200px;
     }
-
+  
     to {
-        opacity: 1;
-        bottom: 0;
+      opacity: 1;
+      bottom: 0;
     }
-}
-
-/* END Addition Topic */
-
-/* START Subtraction Topic */
-*, *::after, *::before {
+  }
+  /* END Addition Topic */
+  
+  /* START Subtraction Topic */
+  *, *::after, *::before {
     box-sizing: border-box;
-}
-
-.modal3-trigger {
+  }
+  .modal3-trigger {
     text-decoration: none;
     padding: 1rem;
     background: rgb(2, 117, 17);
@@ -483,9 +468,8 @@ a.modal3-trigger {
     border-radius: 3px;
     margin-top: 50px;
     color: #fff;
-}
-
-.modal3 {
+  }
+  .modal3 {
     display: none;
     background: rgba(0, 0, 0, .8);
     position: fixed;
@@ -493,82 +477,253 @@ a.modal3-trigger {
     top: 0;
     height: 100%;
     width: 100%;
-}
-
-.modal3:target {
+  }
+  .modal3:target {
     display: table;
-}
-
-.modal__dialog {
+  }
+  .modal__dialog {
     display: table-cell;
     vertical-align: middle;
-}
-
-.modal__content {
+  }
+  .modal__content {
     background: rgb(255, 255, 255);
     width: 60%;
     min-width: 300px;
     margin: auto;
     position: relative;
     animation: slideUp 0.3s ease-in-out;
-}
-
-.modal__header {
+  }
+  .modal__header {
     background: #2980b9;
     color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     position: relative;
-}
-
-.modal__title {
+  }
+  .modal__title {
     margin: 0;
-}
-
-.modal__close {
+  }
+  .modal__close {
     color: #fff;
     text-decoration: none;
     font-size: 30px;
     position: absolute;
     top: 1rem;
     right: 1rem;
-}
-
-.modal__image {
+  }
+  .modal__image {
     display: block;
     margin: 1rem auto;
-}
-
-.modal__text {
+  }
+  .modal__text {
     padding: 0 1rem;
     color: rgb(0, 0, 0);
     line-height: 1.5;
-}
-
-.modal__footer {
+  }
+  .modal__footer {
     padding: 1rem;
     border-top: 1px solid #ccc;
     color: rgb(0, 0, 0);
-}
-
-.modal__link {
+  }
+  .modal__link {
     color: rgb(0, 0, 0);
     text-decoration: underline;
     font-weight: bolder;
-}
-
-@keyframes slideUp {
+  }
+  @keyframes slideUp {
     from {
-        opacity: 0;
-        bottom: -200px;
+      opacity: 0;
+      bottom: -200px;
     }
-
+  
     to {
-        opacity: 1;
-        bottom: 0;
+      opacity: 1;
+      bottom: 0;
     }
-}
-
-/* END Subtraction Topic */
+  }
+  /* END Subtraction Topic */
+  
+  
+  
+  
+  /* START rand addition Topic */
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+  .modal4-trigger {
+    text-decoration: none;
+    padding: 1rem;
+    background: rgb(2, 117, 17);
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 50px;
+    color: #fff;
+  }
+  .modal4 {
+     
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .modal4:target {
+    display: table;
+  }
+  .modal__dialog {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .modal__content {
+    background: rgb(255, 255, 255);
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+    position: relative;
+    animation: slideUp 0.3s ease-in-out;
+  }
+  .modal__header {
+    background: #2980b9;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    position: relative;
+  }
+  .modal__title {
+    margin: 0;
+  }
+  .modal__close {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .modal__image {
+    display: block;
+    margin: 1rem auto;
+  }
+  .modal__text {
+    padding: 0 1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+  }
+  .modal__footer {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    color: rgb(0, 0, 0);
+  }
+  .modal__link {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      bottom: -200px;
+    }
+  
+    to {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+  /* END rand addition Topic */
+  
+  
+  
+  
+  
+  /* START rand sub Topic */
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+  .modal5-trigger {
+    text-decoration: none;
+    padding: 1rem;
+    background: rgb(2, 117, 17);
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 50px;
+    color: #fff;
+  }
+  .modal5 {
+     
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .modal5:target {
+    display: table;
+  }
+  .modal__dialog {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .modal__content {
+    background: rgb(255, 255, 255);
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+    position: relative;
+    animation: slideUp 0.3s ease-in-out;
+  }
+  .modal__header {
+    background: #2980b9;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    position: relative;
+  }
+  .modal__title {
+    margin: 0;
+  }
+  .modal__close {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .modal__image {
+    display: block;
+    margin: 1rem auto;
+  }
+  .modal__text {
+    padding: 0 1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+  }
+  .modal__footer {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    color: rgb(0, 0, 0);
+  }
+  .modal__link {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      bottom: -200px;
+    }
+  
+    to {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+  /* END rand sub Topic */
+  
+  /*  END CODE FOR MODAL */
 /*  END CODE FOR MODAL */
 
 
@@ -787,3 +942,107 @@ body.overlay-is-open .main-ui,
 .reset-button:focus {
     background-color: #00275a;
 }
+
+
+
+
+
+
+ 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.modal4-trigger {
+    text-decoration: none;
+    padding: 1rem;
+    background: rgb(2, 117, 17);
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.modal1 {
+
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modal1:target {
+    display: table;
+}
+
+.modal__dialog {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal__content {
+    background: rgb(255, 255, 255);
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+    position: relative;
+    animation: slideUp 0.3s ease-in-out;
+}
+
+.modal__header {
+    background: #2980b9;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    position: relative;
+}
+
+.modal__title {
+    margin: 0;
+}
+
+.modal__close {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal__image {
+    display: block;
+    margin: 1rem auto;
+}
+
+.modal__text {
+    padding: 0 1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+.modal__footer {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    color: rgb(0, 0, 0);
+}
+
+.modal__link {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        bottom: -200px;
+    }
+
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}  
