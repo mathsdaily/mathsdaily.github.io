@@ -119,6 +119,14 @@ a.modal2-trigger {
 a.modal3-trigger {
   margin: 10px;
 }
+
+a.modal4-trigger {
+  margin: 10px;
+}
+
+a.modal5-trigger {
+  margin: 10px;
+}
 /* END Aligning buttons*/
 
 /* START Multiplication Topic */
@@ -468,6 +476,188 @@ a.modal3-trigger {
   }
 }
 /* END Subtraction Topic */
+
+
+
+
+/* START rand addition Topic */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+.modal4-trigger {
+  text-decoration: none;
+  padding: 1rem;
+  background: rgb(2, 117, 17);
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 50px;
+  color: #fff;
+}
+.modal4 {
+   
+  display: none;
+  background: rgba(0, 0, 0, .8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.modal4:target {
+  display: table;
+}
+.modal__dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal__content {
+  background: rgb(255, 255, 255);
+  width: 60%;
+  min-width: 300px;
+  margin: auto;
+  position: relative;
+  animation: slideUp 0.3s ease-in-out;
+}
+.modal__header {
+  background: #2980b9;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  position: relative;
+}
+.modal__title {
+  margin: 0;
+}
+.modal__close {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.modal__image {
+  display: block;
+  margin: 1rem auto;
+}
+.modal__text {
+  padding: 0 1rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+.modal__footer {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  color: rgb(0, 0, 0);
+}
+.modal__link {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    bottom: -200px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+/* END rand addition Topic */
+
+
+
+
+
+/* START rand sub Topic */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+.modal5-trigger {
+  text-decoration: none;
+  padding: 1rem;
+  background: rgb(2, 117, 17);
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 50px;
+  color: #fff;
+}
+.modal5 {
+   
+  display: none;
+  background: rgba(0, 0, 0, .8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.modal5:target {
+  display: table;
+}
+.modal__dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal__content {
+  background: rgb(255, 255, 255);
+  width: 60%;
+  min-width: 300px;
+  margin: auto;
+  position: relative;
+  animation: slideUp 0.3s ease-in-out;
+}
+.modal__header {
+  background: #2980b9;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  position: relative;
+}
+.modal__title {
+  margin: 0;
+}
+.modal__close {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.modal__image {
+  display: block;
+  margin: 1rem auto;
+}
+.modal__text {
+  padding: 0 1rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+.modal__footer {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  color: rgb(0, 0, 0);
+}
+.modal__link {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    bottom: -200px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+/* END rand sub Topic */
+
 /*  END CODE FOR MODAL */
 
 

@@ -28,9 +28,9 @@ function generateNumber(max) {
 
 function generateProblem() {
   return {
-    numberOne: generateNumber(30),
-    numberTwo: generateNumber(25),
-    operator: ['-', 'x', '+', '÷'][generateNumber(3)]
+    numberOne: generateNumber(100),
+    numberTwo: generateNumber(100),
+    operator: ['+', '-', '+', '÷'][generateNumber(0)]
   }
 }
 
