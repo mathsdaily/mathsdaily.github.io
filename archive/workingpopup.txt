@@ -15,7 +15,7 @@
            
         </header>
         <div class="modal__body">
-          <img src="" alt="modal image" class="modal__image">
+          
           <p class="modal__text">multp</p>
         </div>
         <footer class="modal__footer">
