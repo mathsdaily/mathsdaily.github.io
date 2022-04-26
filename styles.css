@@ -99,10 +99,9 @@ a {
 
 
 
-/* the css code for the hover effect when hovering over the help/about the author link */
+/* the css code for the hover effect when hovering over the about the author link */
 .help-author-Gradient {
   font-size: 22px;
-
   text-align: center;
   align-items: center;
   align-content: center;
@@ -122,6 +121,35 @@ a {
   -webkit-animation: GradientAnimation 2s ease infinite;
   animation: GradientAnimation 2s ease infinite;
 }
+
+
+
+
+/* the css code for the hover effect when hovering over the help link + includes a HELP cursor to make it look nicer */
+
+
+.helpLinkCursor {
+  cursor: help;
+  font-size: 22px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#0b8129), color-stop(#90e9f3), color-stop(#909ff3), color-stop(#cc90f3), color-stop(#f390d1), color-stop(#f39a90), color-stop(#f3e590), to(#b8f390)) repeat scroll 0% 0%/200% 200%;
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, #727171, #595e5f, #0b8129, #595e5f, #6d6565, #544f4f, #6b6464, #000000) repeat scroll 0% 0%/200% 200%;
+  background-clip: border-box;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.helpLinkCursor:hover {
+  -webkit-animation: GradientAnimation 2s ease infinite;
+  animation: GradientAnimation 2s ease infinite;
+}
+
+
 
 
 

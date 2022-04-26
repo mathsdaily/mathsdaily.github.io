@@ -41,11 +41,193 @@
   <!--END: Code for the navbar and the drop down in the navbar-->
  
   <p class="welcometitle">Hello <em><strong><span id="username"></span></strong></em>, Welcome the <em>help</em> page, where you can contact the creator, and get your issue resolved as soon as possible</p>
+  
+  <p class="welcometitle">Frequently Asked Questions</p>
+   
+
+
+
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!--1--->
+  <div class="accordion-content">
+   
+  
+    <div class="accordion-item">
+      <header class="item-header">
+        <h4 class="item-question">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+        </h4>
+        <div class="item-icon">
+          <i class='bx bx-chevron-down'></i>
+        </div>
+      </header>
+      <div class="item-content">
+        <p class="item-answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elitl
+        </p>
+        <p class="item-answer">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <header class="item-header">
+        <h4 class="item-question">
+          Lorem ipsum dolor sit amet?
+        </h4>
+        <div class="item-icon">
+          <i class='bx bx-chevron-down'></i>
+        </div>
+      </header>
+      <div class="item-content">
+        <p class="item-answer">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.      </p>
+        <p class="item-answer">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <header class="item-header">
+        <h4 class="item-question">
+  Lorem ipsum dolor sit amet, consectetur?</h4>
+        <div class="item-icon">
+          <i class='bx bx-chevron-down'></i>
+        </div>
+      </header>
+      <div class="item-content">
+        <p class="item-answer">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <header class="item-header">
+        <h4 class="item-question">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+        </h4>
+        <div class="item-icon">
+          <i class='bx bx-chevron-down'></i>
+        </div>
+      </header>
+      <div class="item-content">
+        <p class="item-answer">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <p class="item-answer">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <style>
      
-    <script>
-      
-    </script>
-    <p class="topic-select-welcomer">Please select a level:</p>
+ 
+.accordion-content {
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgb(45, 45, 45);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+  border-radius: 8px;
+}
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.348);
+  margin-bottom: 0.5em;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.2em;
+  background-color: #00000000;
+}
+
+.item-icon {
+  margin-left: 1rem;
+  flex: 0 0 25px;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  background: rgb(38, 102, 32);
+  cursor: pointer;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+}
+.item-icon i {
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.item-question {
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.active .item-icon i {
+  transform: rotate(540deg);
+}
+
+.active .item-question {
+  font-weight: 500;
+}
+
+.item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.item-answer {
+  line-height: 150%;
+  opacity: 0.8;
+}
+
+
+  </style>
+
+<script>
+  const accordionBtns = document.querySelectorAll(".item-header");
+
+accordionBtns.forEach((accordion) => {
+  accordion.onclick = function () {
+    this.classList.toggle("active");
+
+    let content = this.nextElementSibling;
+    console.log(content);
+
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      console.log(content.style.maxHeight);
+    }
+  };
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+    <p class="topic-select-welcomer"></p>
   </div>
  
  
