@@ -30,7 +30,7 @@ function generateProblem() {
   return {
     numberOne: generateNumber(10),
     numberTwo: generateNumber(3),
-    operator: ['÷'][generateNumber(0)]
+    operator: ['+'][generateNumber(0)]
   }
 }
 
