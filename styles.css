@@ -165,11 +165,11 @@ a {
 
 /* the code for the parallax effect (used on home pg, and other pgs) */
 .parallax {
-  background: url("/imgs/parra1-5.jpg") no-repeat center;
+  background: url("/imgs/hdParraBG.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 450px;
-
+  image-resolution: high;
   animation: fadeIn 2.5s;
   -webkit-animation: fadeIn 2.5s;
   -moz-animation: fadeIn 2.5s;
@@ -346,6 +346,26 @@ nav>ul>li:hover>ul {
 .active {
   background-color: rgb(2, 117, 17);
 }
+
+
+/* The css for the divider between the help link and the about link */
+.divider {
+  position: relative;
+   height: 1px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 5px;
+  background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+
 
 /* END CSS */
 /* ** */
