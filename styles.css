@@ -96,9 +96,6 @@ a {
   animation: GradientAnimation 2s ease infinite;
 }
 
-
-
-
 /* the css code for the hover effect when hovering over the about the author link */
 .help-author-Gradient {
   font-size: 22px;
@@ -115,19 +112,13 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 /* here is the actual hover deceleration */
 .help-author-Gradient:hover {
   -webkit-animation: GradientAnimation 2s ease infinite;
   animation: GradientAnimation 2s ease infinite;
 }
 
-
-
-
 /* the css code for the hover effect when hovering over the help link + includes a HELP cursor to make it look nicer */
-
-
 .helpLinkCursor {
   cursor: help;
   font-size: 22px;
@@ -148,10 +139,6 @@ a {
   -webkit-animation: GradientAnimation 2s ease infinite;
   animation: GradientAnimation 2s ease infinite;
 }
-
-
-
-
 
 /* START: the animation for the hover gradient login link */
 @keyframes GradientAnimation {
