@@ -69,7 +69,10 @@ nav>ul>li:hover>ul {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn /* shown when hovered over */ {
+.navbar a:hover, .dropdown:hover .dropbtn
+
+/* shown when hovered over */
+  {
   background-color: rgb(2, 117, 17);
 }
 
@@ -82,7 +85,10 @@ nav>ul>li:hover>ul {
   z-index: 1;
 }
 
-.dropdown-content /* some nice styling etc and shadows */ {
+.dropdown-content
+
+/* some nice styling etc and shadows */
+  {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -100,13 +106,17 @@ nav>ul>li:hover>ul {
   text-align: left;
 }
 
-.dropdown-content a:hover /* some nice styling  */{
+.dropdown-content a:hover
+
+/* some nice styling  */
+  {
   background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 /* END The dropdown container */
 /* END NavBar CSS */
 
@@ -124,12 +134,12 @@ nav>ul>li:hover>ul {
 body {
   margin: 0;
   font-family: 'Play', sans-serif;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   height: 100vh;
-  background: rgb(30, 32, 30);;
-   
+  background: rgb(30, 32, 30);
+  ;
+
 }
 
 .game-container {
@@ -253,7 +263,7 @@ label {
   user-select: none;
 }
 
-.finished > h1 {
+.finished>h1 {
   opacity: 0.5;
 }
 
@@ -495,7 +505,10 @@ nav>ul>li:hover>ul {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn /* shown when hovered over */ {
+.navbar a:hover, .dropdown:hover .dropbtn
+
+/* shown when hovered over */
+  {
   background-color: rgb(2, 117, 17);
 }
 
@@ -508,7 +521,10 @@ nav>ul>li:hover>ul {
   z-index: 1;
 }
 
-.dropdown-content /* some nice styling etc and shadows */ {
+.dropdown-content
+
+/* some nice styling etc and shadows */
+  {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -526,12 +542,16 @@ nav>ul>li:hover>ul {
   text-align: left;
 }
 
-.dropdown-content a:hover /* some nice styling  */{
+.dropdown-content a:hover
+
+/* some nice styling  */
+  {
   background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 /* END The dropdown container */
 /* END NavBar CSS */
