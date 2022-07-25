@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <style>
+        #frame001 {
+            padding: 11px;
+            border-radius: 17px;
+            background-color: powderblue;
+            border: 4px solid black;
+            height: auto;
+        }
+
+        #font001 {
+            color: black;
+            font-size: large;
+        }
+
+        .blue001 {
+            background-color: blue;
+            border: none;
+            color: white;
+            padding: 7px 17px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 2px 2px;
+            border-radius: 9px;
+            cursor: pointer;
+            width: 178px;
+        }
+
+        #align001 {
+            text-align: center;
+        }
+    </style>
+    <div id="frame001">
+        <div id="font001">
+            <div id="align001">
+                <h2>Numbers Guessing Game</h2>
+                <hr />
+                <p>Attempts: <text id="attempts001">0</text></p>
+                <input type="text" id="number001" size="1" maxlength="1" />
+                <input type="text" id="number002" size="1" maxlength="1" />
+
+ 
+
+                <input type="text" id="number003" size="1" maxlength="1" />
+                <input type="text" id="number004" size="1" maxlength="1" /><br /><br />
+                <div id="retake001">
+                    <button class="blue001" onclick="submit001()">Submit</button>
+                </div>
+                <br /><br />
+                <p id="answer001"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var f = 0;
+        var g = 0;
+        var h = 0;
+        var i = 0;
+        var j;
+        var l = 0;
+        l++;
+
+        var shuffles001 = Math.floor(Math.random() * 9);
+        var shuffles002 = Math.floor(Math.random() * 9);
+        var shuffles003 = Math.floor(Math.random() * 9);
+        var shuffles004 = Math.floor(Math.random() * 9);
+
+        message001.innerHTML = shuffles001;
+        message002.innerHTML = shuffles002;
+        message003.innerHTML = shuffles003;
+        message004.innerHTML = shuffles004;
+
+        function submit001() {
+            var b = number001.value;
+            var c = number002.value;
+            var d = number003.value;
+            var e = number004.value;
+            attempts001.innerHTML = l++;
+            if (b == shuffles001) {
+                f = 1;
+            }
+            else {
+                f = 0;
+            }
+
+            if (c == shuffles002) {
+                g = 1;
+            }
+            else {
+                g = 0;
+            }
+
+            if (d == shuffles003) {
+                h = 1;
+            }
+            else {
+                h = 0;
+            }
+
+            if (e == shuffles004) {
+                i = 1;
+            }
+            else {
+                i = 0;
+            }
+
+            var j = f + g + h + i;
+
+            if (j == 0) {
+                answer001.innerHTML = "None of the numbers is correct.";
+            }
+
+            if (j == 1) {
+                answer001.innerHTML = "You have 1 number correct.";
+            }
+
+            if (j == 2) {
+                answer001.innerHTML = "You have 2 numbers correct.";
+            }
+
+            if (j == 3) {
+                answer001.innerHTML = "You have 3 numbers correct.";
+            }
+
+            if (j == 4) {
+                answer001.innerHTML = "Congratulations! You have found all the correct numbers, after " + (l - 1) + " attempts." + "<br /><br />" + "Thanks for playing this game.";
+                retake001.innerHTML = "<button class=blue001 onclick=repeat001()>Repeat</button>";
+            }
+        }
+
+        function repeat001() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>
